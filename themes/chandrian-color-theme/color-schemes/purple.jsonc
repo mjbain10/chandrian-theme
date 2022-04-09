@@ -1,0 +1,39 @@
+{
+    "name": "Purple",
+    "type": "dark",
+    "colors": {
+        "main": "#B38CFF",
+        "mainDarker1": "#A67AFD",
+        "mainLight1": "#D0BAFC",
+        "mainLight2": "#E2D5FC",
+        "mainLightest": "#EDE7FA", //fn params
+        
+        "alt1": "#FFE97D", //ifthen
+        "alt1Complentary": "#FFBC6F",//return
+
+        "mainAlt": "#64D7FA", //fn definition, grayish cyan
+        "alt3": "#64E7E1", //class names, Promise., bright cyan
+        
+        "mainVariant": "#9FBDFF", //this.state.foo, bright purple
+        "alt4": "#8C95E4", // grayish purple
+        
+        "alt5": "#FFAAEA", // brown-ish red, annotation
+        "alt5Prominent": "#FDA7A1", // Type declaration
+        "alt5Supplementary": "#D88A85",
+
+        "commentGray": "#758096",
+        "commentGrayProminent": "#969EAF",
+        "keywordGray": "#8A94A8",
+    
+        "important": "#FF6C6C",
+    
+        "strings": "#BFEC94",
+        "interpolated": "#8DFC9C",
+        "number": "#B983FF",
+        "booleans": "#FFA2A2",
+        "regex": "#F3DF84",
+    
+        "text": "#D3CCE7",
+        "textProminent": "#FCF9FF"
+    }
+}

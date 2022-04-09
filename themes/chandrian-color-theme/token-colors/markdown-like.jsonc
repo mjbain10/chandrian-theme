@@ -4,7 +4,8 @@
             "markup.bold.markdown"
         ],
         "settings": {
-            "foreground": "{{textProminent}}"
+            "foreground": "{{strings}}E7",
+            "fontStyle": "bold"
         }
     },
 
@@ -21,7 +22,7 @@
             "markup.italic.markdown"
         ],
         "settings": {
-            // "foreground": "{{textProminent}}",
+            "foreground": "{{alt4}}",
             "fontStyle": "italic"
         }
     },

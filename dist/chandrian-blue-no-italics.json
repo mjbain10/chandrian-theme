@@ -767,7 +767,7 @@
         "markup.bold.markdown"
       ],
       "settings": {
-        "foreground": "#FFFFFF"
+        "foreground": "#46BD66E7"
       }
     },
     {
@@ -782,7 +782,9 @@
       "scope": [
         "markup.italic.markdown"
       ],
-      "settings": {}
+      "settings": {
+        "foreground": "#989BDF"
+      }
     },
     {
       "scope": [

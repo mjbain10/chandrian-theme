@@ -22,6 +22,21 @@
   "contributes": {
     "themes": [
       {
+        "label": "Chandrian Purple",
+        "uiTheme": "vs-dark",
+        "path": "./dist/chandrian-purple.json"
+      },
+      {
+        "label": "Chandrian Purple (no italics)",
+        "uiTheme": "vs-dark",
+        "path": "./dist/chandrian-purple-no-italics.json"
+      },
+      {
+        "label": "Chandrian Purple (High Contrast)",
+        "uiTheme": "vs-dark",
+        "path": "./dist/chandrian-purple-high-contrast.json"
+      },
+      {
         "label": "Chandrian Blue",
         "uiTheme": "vs-dark",
         "path": "./dist/chandrian-blue.json"

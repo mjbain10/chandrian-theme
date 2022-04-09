@@ -28,13 +28,12 @@ function stripItalics(colorList) {
 }
 module.exports = function compile(paths) {
   const colorSchemeFiles = fs.readdirSync(paths.COLOR_SCHEMES_FOLDER);
-  colorSchemeFiles.forEach((fileName) => {
+  colorSchemeFiles.forEach((colorSchemeFile) => {
     const contents = fs.readFileSync(
-      `${paths.COLOR_SCHEMES_FOLDER}/${fileName}`,
+      `${paths.COLOR_SCHEMES_FOLDER}/${colorSchemeFile}`,
       "utf8"
     );
     const scheme = jsonc.parse(contents);
-    // console.log(scheme, contents);
     const base = {
       name: `Chandrian ${scheme.name}`,
       type: scheme.type,
@@ -44,10 +43,10 @@ module.exports = function compile(paths) {
     const colors = scheme.colors;
     const outputFileName = `chandrian-${scheme.name.toLowerCase()}`;
 
-    const generalStyleFiles = fs.readdirSync(paths.GENERAL_STYLES_FOLDER);
+    const generalStyleFiles = fs.readdirSync(`${paths.GENERAL_STYLES_FOLDER}/${scheme.name.toLowerCase()}`);
     const generalColors = generalStyleFiles.reduce((accum, fileName) => {
       const contents = parseContents(
-        `${paths.GENERAL_STYLES_FOLDER}/${fileName}`,
+        `${paths.GENERAL_STYLES_FOLDER}/${scheme.name.toLowerCase()}/${fileName}`,
         colors
       );
       Object.assign(accum, contents);
